@@ -1,7 +1,7 @@
 // Offline cache: serve from cache first, refresh it in the background when online.
 // Change CACHE on every update so the iPad picks up the new version.
-const CACHE = "sound-detective-v10";
-const FILES = ["./", "index.html", "manifest.webmanifest", "icon-180.png", "icon-512.png", "bank.json", "fonts/mem8Ya6iyW-Lwqg40ZMFVZ0bf8pkAg.woff2", "fonts/mem_Ya6iyW-LwqgwarYQeL8WVQ.woff2", "fonts/wXKrE3kTposypRyd51jcAM4olXc.woff2"];
+const CACHE = "sound-detective-v11";
+const FILES = ["./", "index.html", "manifest.webmanifest", "icon-180.png", "icon-512.png", "bank.json", "ph.enc", "fonts/mem8Ya6iyW-Lwqg40ZMFVZ0bf8pkAg.woff2", "fonts/mem_Ya6iyW-LwqgwarYQeL8WVQ.woff2", "fonts/wXKrE3kTposypRyd51jcAM4olXc.woff2"];
 
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
