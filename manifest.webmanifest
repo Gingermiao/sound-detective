@@ -1,0 +1,13 @@
+{
+  "name": "Sound Detective",
+  "short_name": "Sounds",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#e9f0ff",
+  "theme_color": "#e9f0ff",
+  "icons": [
+    {"src": "icon-180.png", "sizes": "180x180", "type": "image/png"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png"}
+  ]
+}
